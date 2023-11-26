@@ -1,0 +1,36 @@
+{
+    "name": "Digital Yalo",
+    "logo": {
+      "light": "logo/download.png",
+      "dark": "logo/download.png",
+      "href": "https://digitalyalo.com/"
+    },
+    "favicon": "/favicon-16x16.png",
+    "colors": {
+      "primary": "#353022",
+      "light": "#cfcfcf",
+      "dark": "#166534"
+    },
+    "topbarLinks": [
+      {
+        "name": "Contact Us",
+        "url": "mailto:info@digitalyalo.com"
+      }
+    ],
+    "navigation": [
+      {
+        "group": "Documentation",
+        "pages": ["documentation"]
+      }
+    ],
+    "footerSocials": {
+      "github": "https://github.com/mintlify",
+      "discord": "https://discord.gg/MPNgtSZkgK",
+      "twitter": "https://twitter.com/mintlify"
+    },
+    "integrations": {
+      "intercom": "abcdefz",
+      "frontchat": "abcdez"
+    }
+  }
+  
