@@ -1,15 +1,20 @@
 {
     "name": "Digital Yalo",
     "logo": {
-      "light": "logo/download.png",
-      "dark": "logo/download.png",
+      "light": "logo/download-removebg-preview.png",
+      "dark": "logo/download-removebg-preview.png",
       "href": "https://digitalyalo.com/"
     },
-    "favicon": "/favicon-16x16.png",
+    "openapi": "openapi.yaml",
+    "favicon": "/favicon-16x16-removebg-preview.png",
     "colors": {
       "primary": "#353022",
       "light": "#D8A790",
-      "dark": "#764B36"
+      "dark": "#764B36",
+      "background": {
+        "light": "#F5F5F5",
+        "dark": "#1C1C1C"
+      }
     },
     "topbarLinks": [
       {
@@ -17,16 +22,73 @@
         "url": "mailto:info@digitalyalo.com"
       }
     ],
+    "anchors": [
+      {
+        "name": "FAQs",
+        "icon": "question",
+        "color": "#353022", 
+        "url": "faqs"
+      },
+      {
+        "name": "Contact Us",
+        "icon": "envelope",
+        "color": "#353022", 
+        "url": "mailto:info@digitalyalo.com"
+      }
+    ],
     "navigation": [
       {
-        "group": "Documentation",
-        "pages": ["documentation"]
+        "group": "Digital Yalo",
+        "pages": ["documentation", "website-documentation"]
+      },
+      {
+        "group": "Content Authoring",
+        "pages": ["acf", "asana tasks"]
+      },
+      {
+        "group": "pet",
+        "pages": [
+          "pet/update-an-existing-pet",
+          "pet/add-a-new-pet-to-the-store",
+          "pet/finds-pets-by-status",
+          "pet/finds-pets-by-tags",
+          "pet/find-pet-by-id",
+          "pet/updates-a-pet-in-the-store-with-form-data",
+          "pet/deletes-a-pet",
+          "pet/uploads-an-image"
+        ]
+      },
+      {
+        "group": "store",
+        "pages": [
+          "store/returns-pet-inventories-by-status",
+          "store/place-an-order-for-a-pet",
+          "store/find-purchase-order-by-id",
+          "store/delete-purchase-order-by-id"
+        ]
+      },
+      {
+        "group": "user",
+        "pages": [
+          "user/create-user",
+          "user/creates-list-of-users-with-given-input-array",
+          "user/logs-user-into-the-system",
+          "user/logs-out-current-logged-in-user-session",
+          "user/get-user-by-user-name",
+          "user/update-user",
+          "user/delete-user"
+        ]
+      },
+      {
+        "group": "Settings",
+        "pages": ["faqs"]
       }
     ],
     "footerSocials": {
-      "github": "https://github.com/mintlify",
-      "discord": "https://discord.gg/MPNgtSZkgK",
-      "twitter": "https://twitter.com/mintlify"
+      "github": "https://github.com/yalo-dev",
+      "facebook": "https://www.facebook.com/digitalyalo",
+      "twitter": "https://twitter.com/digitalyalo",
+      "linkedin": "https://www.linkedin.com/company/digital-yalo/mycompany/"
     },
     "integrations": {
       "intercom": "abcdefz",

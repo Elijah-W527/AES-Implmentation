@@ -1,0 +1,56 @@
+---
+title: "WordPress ACF Setup"
+sidebarTitle: "ACF Setup"
+description: "Guide to using Advanced Custom Fields on your WordPress site."
+---
+
+# WordPress ACF Setup
+
+## Introduction
+
+Advanced Custom Fields (ACF) is a powerful WordPress plugin that allows you to add custom fields to your content, providing flexibility and control over your website's data.
+
+## Accessing the WordPress Backend
+
+To set up ACF and manage custom fields, follow these steps:
+
+1. **Log in to WordPress Admin:**
+   - Open your web browser and navigate to your WordPress site's admin dashboard (typically at `yourdomain.com/wp-admin`).
+   - Enter your username and password to log in.
+
+2. **Navigating to ACF:**
+   - Once logged in, look for the "Custom Fields" menu item in the WordPress dashboard.
+   - Click on "Custom Fields" to access the ACF settings.
+
+## Creating ACF Fields
+
+Now that you're in the ACF settings, let's create a new set of custom fields:
+
+1. **Field Groups:**
+   - In the ACF dashboard, click on "Field Groups."
+   - Click "Add New" to create a new group for your custom fields.
+
+2. **Adding Fields:**
+   - Within the new group, click "Add Field" to start defining your custom fields.
+   - For each field, specify the field type (text, image, etc.), label, and any additional settings.
+
+3. **Assigning Fields to Content:**
+   - After creating fields, go to "Location" and specify where these fields should appear (e.g., on pages, posts, custom post types).
+   - Save your field group.
+
+4. **Editing Content with ACF Fields:**
+   - Now, when you edit a page or post, you'll see the custom fields you've created in the WordPress editor.
+   - Populate these fields with the desired content.
+
+## Displaying ACF Content
+
+To display the ACF content on your site:
+
+1. **In Your Theme:**
+   - In your theme files (e.g., `single.php`, `page.php`), use the `get_field` function to retrieve and display ACF values.
+
+   ```php
+   <?php
+   $custom_field_value = get_field('your_custom_field');
+   echo $custom_field_value;
+   ?>
